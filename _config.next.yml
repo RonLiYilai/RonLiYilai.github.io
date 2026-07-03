@@ -439,6 +439,9 @@ font:
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
   host:
+    external: true
+    family: Playwrite Australia Tasmania
+    size:
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -447,7 +450,7 @@ font:
 
   # Global font settings used for all elements inside <body>.
   global:
-    external: false
+    external: true
     family: Playwrite Australia Tasmania
     size:
 
