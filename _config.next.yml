@@ -447,7 +447,7 @@ font:
 
   # Global font settings used for all elements inside <body>.
   global:
-    external: true
+    external: false
     family: Playwrite Australia Tasmania
     size:
 
