@@ -1,3 +1,8 @@
+---
+title: Share an article from Zhihu
+date: 
+tags:
+---
 ## What exactly are we striving for throughout our entire lives?
 
 
