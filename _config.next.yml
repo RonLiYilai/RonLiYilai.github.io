@@ -438,10 +438,7 @@ font:
   enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
-    external: true
-    family: Playwrite Australia Tasmania
-    size:
+  host: https://fonts.google.com
 
   # Font options:
   # `external: true` will load this font family from `host` above.
