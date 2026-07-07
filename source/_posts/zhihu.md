@@ -2,9 +2,10 @@
 title: Share an article from Zhihu
 date: 
 tags:
+hide: true
+description: What exactly are we striving for throughout our entire lives?
 ---
 ## What exactly are we striving for throughout our entire lives?
-
 
 There are some philosophical perspectives.
 

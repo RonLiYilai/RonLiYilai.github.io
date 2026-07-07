@@ -2,6 +2,8 @@
 title: tools or methods of file convertion
 date: 
 tags:
+hide: true
+description: tools for file convertion
 ---
 This post record tools or methods of file convertion
 
@@ -11,12 +13,12 @@ This post record tools or methods of file convertion
 2. open the makrdown file
 3. right click and print current document to HTML
 4. open the HTML file in the browser
-5. copy the content and paste it in word file 
+5. copy the content and paste it in word file
 
-Or 
+Or
 
-online converter: markdowntoword.io
+online converter: [markdowntoword](https://markdowntoword.io)
 
 ### word to markdown
 
-online converter: word2md.net
+online converter: [word2md](https://word2md.net)

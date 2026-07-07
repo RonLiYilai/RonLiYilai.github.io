@@ -37,10 +37,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
 #scheme: Pisces
-#scheme: Gemini
+scheme: Gemini
 
 # Dark Mode
 darkmode: true
@@ -269,7 +269,7 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (nonsupport animation).
@@ -448,14 +448,14 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Times New Roman
+    family: Georgia
     size:
 
   # Font settings for site title (.site-title).
   title:
     external: true
-    family:
-    size:
+    family: Georgia
+    size: 2
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
