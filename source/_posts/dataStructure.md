@@ -1,13 +1,17 @@
 ---
 title: Data Structure
 date: 2026-07-08
-tags:
+tags: 
+  - Algorithm
+  - Java
 hide: true
 description: Data Structure and Algorithms
 ---
 # Sorting Algorithms
+
 ## Bubble Sort
-``` Java
+
+```Java
 public void bubblesort(int[] a) {
     for (int i = 0; i < a.length; i++) {
         boolean flag = false;
@@ -26,8 +30,10 @@ public void bubblesort(int[] a) {
     }
 }
 ```
+
 ## Insertion Sort
-``` Java
+
+```Java
 public void insertionsort(int[] a) {
     for (int i = 1; i < a.length; i++)
     {
@@ -35,7 +41,7 @@ public void insertionsort(int[] a) {
         int j;
         for (j = i - 1; j >= 0; j--)
         {
-            if (a[j] <= key)	
+            if (a[j] <= key)
                 break;
             a[j+1] = a[j];
         }
@@ -43,8 +49,10 @@ public void insertionsort(int[] a) {
     }
 }
 ```
+
 ## Selection Sort
-``` Java
+
+```Java
 public void selectionsort(int[] a) {
     int min = 0;
     for (int i = 0; i < a.length; i++)
@@ -57,12 +65,14 @@ public void selectionsort(int[] a) {
         }
         int temp = a[min];
         a[min] = a[i];
-        a[i] = temp;		
+        a[i] = temp;	
     }
 }
 ```
+
 ## Heap Sort
-``` Java
+
+```Java
 private static void swap(int [] a, int x, int y) {
     int temp = a[x];
     a[x] = a[y];
@@ -108,7 +118,7 @@ private static void down(int[] a, int p, int size) {
     * Second, remove the max from the virtual heap one by one.
     *  
     * Running time O( n log n ).
-    */    
+    */  
 public static void heapsort(int[] a) {
     for (int i = 1; i < a.length; i++)
         up(a, i);
@@ -120,9 +130,12 @@ public static void heapsort(int[] a) {
     } 
 }
 ```
+
 ## Binary Sort
+
 ## Merge Sort
-``` Java
+
+```Java
 public static void mergesort(int[] a) {
     mergesort(a, 0, a.length- 1);
 }
@@ -134,9 +147,12 @@ public static void mergesort(int[] a, int low, int high) {
     merge(a, low, mid, high);
 }
 ```
+
 ## Quick Sort
+
 # Binary Search
-``` Java
+
+```Java
 public int binarySearch(int[] a, int key) {
     int high = a.length - 1;
     int low = 0;
@@ -159,8 +175,10 @@ public int binarySearch(int[] a, int key) {
     return -1;
 }
 ```
+
 # Recursive Binary Search
-``` Java
+
+```Java
 public int RBinary(int[] a, int key, int high, int low)
 {
     if (low > high)
@@ -171,8 +189,10 @@ public int RBinary(int[] a, int key, int high, int low)
     return key > a[mid]?RBinary(a, key, high, mid + 1):RBinary(a, key, mid - 1, low);
 }
 ```
+
 # Balanced Brackets
-``` Java
+
+```Java
 public static boolean isBalanced(String str){
     // Return true if and only if 'str' 
     // 1) is non-empty,
@@ -209,8 +229,10 @@ public static boolean isBalanced(String str){
     return p == 0;
 }
 ```
+
 # Divide and Conquer
-``` java
+
+```java
 public static int recursivePeak(int[] a) {
     return recursivePeak(a, 0, a.length - 1);
 }
@@ -221,7 +243,7 @@ private static int recursivePeak(int[] a, int l, int h) {
     int m = l + (h - l + 1) / 2; // the same as m = (l + h + 1) / 2, but safer.
     if (a[m] < a[m-1]) return recursivePeak(a, l, m - 1);
     else return recursivePeak(a, m, h);
-    /*        
+    /*      
         * The following use two comparisons to eliminate a[m] as well.
     int m = l + (h - l) / 2; // l + (h - l + 1) / 2 also works.
     if (m > 0 && a[m] < a[m-1]) return recursivePeak(a, l, m - 1);
@@ -230,7 +252,8 @@ private static int recursivePeak(int[] a, int l, int h) {
     */
 }
 ```
-``` Java
+
+```Java
 public static int recursiveMax(int[] a) {
     if (a.length == 0) return -1;
     return max(a, 0, a.length-1);
@@ -243,7 +266,8 @@ private static int max(int[] a, int low, int high) {
     return (a[left] >= a[right])? left:right; 
 }
 ```
-``` Java
+
+```Java
 public static int[] naiveMaxmin(int[] a) {
     if (a.length == 0) return null;
     int[] ans = new int[2];
@@ -257,12 +281,13 @@ public static int[] naiveMaxmin(int[] a) {
         */
     for (int i = 2; i < a.length; i++) {
         if (a[i] > a[ans[0]]) ans[0] = i; 
-        else if (a[i] < a[ans[1]]) ans[1] = i;            
+        else if (a[i] < a[ans[1]]) ans[1] = i;          
     }
     return ans;
 }
 ```
-``` Java
+
+```Java
     public static int[] rMaxmin(int[] a) {
 	return maxmin(a, 0, a.length - 1);
     }
@@ -280,7 +305,7 @@ public static int[] naiveMaxmin(int[] a) {
             ans[1] = low - ans[0] + high;
             return ans;
         }
-        
+      
         // in the rest high - low >= 2. Easy.
         int mid = low + (high - low) / 2;
         int[] a1 = maxmin(a, low, mid);

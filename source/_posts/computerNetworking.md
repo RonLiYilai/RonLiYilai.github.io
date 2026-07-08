@@ -2,6 +2,7 @@
 title: Computer Networking
 date: 2026-07-06
 tags:
+  - Course Note
 hide: true
 description: Computer Networking Course Note
 ---

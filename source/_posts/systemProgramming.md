@@ -2,6 +2,7 @@
 title: System Programming
 date: 2026-07-06
 tags:
+  - Course Note
 hide: true
 description: System Programming Course Note
 ---

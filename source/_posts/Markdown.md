@@ -3,7 +3,6 @@ title: Markdown Tutorial
 date: 2026-07-07
 tags:
   - Markdown
-  - Tutorial
 hide: true
 description: This post is a beginner-friendly guide to writing Markdown
 ---

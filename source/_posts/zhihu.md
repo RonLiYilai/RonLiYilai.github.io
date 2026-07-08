@@ -2,6 +2,7 @@
 title: Share an article from Zhihu
 date: 2026-07-03
 tags:
+  - sharing
 hide: true
 description: What exactly are we striving for throughout our entire lives?
 ---
